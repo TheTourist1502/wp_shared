@@ -17,6 +17,8 @@ export default defineConfig(({ mode }) => {
         filename: 'remoteEntry.js',
         exposes: {
           './Card': './src/Card.tsx',
+          './http_service': './src/services/http_service/index.ts',
+          './constants': './src/constants/index.ts',
         },
         remotes: {},
         shared: {
