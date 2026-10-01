@@ -16,8 +16,9 @@ export default defineConfig(({ mode }) => {
         name: 'wp_shared',
         filename: 'remoteEntry.js',
         exposes: {
-          './Card': './src/Card.tsx',
-          './http_service': './src/services/http_service/index.ts',
+          './Card': './src/card.tsx',
+          './DataTable': './src/components/data-table/index.tsx',
+          './http_service': './src/services/http-service/index.ts',
           './constants': './src/constants/index.ts',
         },
         remotes: {},
